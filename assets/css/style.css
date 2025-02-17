@@ -1,0 +1,41 @@
+* {
+    font-family: Kanit;
+}
+
+@media (min-width: 992px) {
+    .text-lg-white {
+    color: #fff !important;
+}
+}
+
+.text-gold {
+    color: #D2AE6E !important;
+}
+
+.bg-gradient-gold {
+    background-image: linear-gradient(195deg, #D2AE6E 0%, #A68C4C 100%);
+}
+
+.text-gradient.text-gold {
+    background-image: linear-gradient(195deg, #D2AE6E 0%, #A68C4C 100%);
+}
+
+.btn-gold {
+    background-color: #D2AE6E;
+    color: #fff;
+}
+
+.btn-gold:hover {
+    background-color: #cdaf7a;
+    color: #fff;
+}
+
+.btn.btn-gold:active {
+    background-color: #D2AE6E;
+    color: #fff;
+}
+
+.scroll {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+}
