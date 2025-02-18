@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Michroma&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/core.css">
-    <script src="https://kit.fontawesome.com/2c7dc414d4.js" crossorigin="anonymous"></script>
+    <script src="assets/js/plugins/fontawesome.min.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/nucleo-icons.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="assets/css/aos.min.css" rel="stylesheet">
@@ -417,21 +417,21 @@ class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-no
                         </div>
                         <div class="col-lg-7">
                             <form id="contact-form" class="needs-validation" method="post" action="https://formsubmit.co/administrativo@nunesevieira.com.br" novalidate>
-                              <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+                              <input type="hidden" name="_next" value="https://roversodev.github.io/confraria/thanks.html">
                               <input type="hidden" name="_captcha" value="false">
                               <input type="hidden" name="_template" value="box">
                                 <div class="card-body position-relative">
                                     <div class="row mt-4">
                                         <div class="col-md-6">
                                             <div class="input-group input-group-outline mb-4">
-                                                <label class="form-label">Nome</label>
+                                                <label class="form-label" for="name">Nome</label>
                                                 <input class="form-control" name="name" id="name" aria-label="Nome..." type="text" required>
                                                 <div class="invalid-feedback">Digite seu nome.</div>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                           <div class="input-group input-group-outline mb-4">
-                                              <label class="form-label">Telefone</label>
+                                              <label class="form-label" for="telefone">Telefone</label>
                                               <input class="form-control" name="telefone" id="telefone" aria-label="Telefone..." type="text" required>
                                               <div class="invalid-feedback">Digite seu WhatsApp.</div>
                                           </div>
@@ -439,19 +439,19 @@ class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-no
                                     </div>
                                     <div>
                                         <div class="input-group input-group-outline mb-4">
-                                            <label class="form-label">E-mail</label>
+                                            <label class="form-label" for="email">E-mail</label>
                                             <input type="email" name="email" id="email" class="form-control" required>
                                             <div class="invalid-feedback">Digite um e-mail válido.</div>
                                         </div>
                                     </div>
                                     <div class="input-group input-group-outline mb-4">
-                                      <label class="form-label">Empresa e Cargo</label>
+                                      <label class="form-label" for="empresa_e_cargo">Empresa e Cargo</label>
                                       <input type="text" name="empresa_e_cargo" id="empresa_e_cargo" class="form-control" required>
                                       <div class="invalid-feedback">Digite sua empresa e cargo.</div>
                                   </div>
-                                    <label>Como podemos te ajudar?</label>
+                                    <label for="message">Como podemos te ajudar?</label>
                                     <div class="input-group input-group-outline">
-                                        <textarea name="message" class="form-control" id="message" rows="3" placeholder="ex. quero conversar sobre..." required=""></textarea>
+                                        <textarea name="message" class="form-control" id="message" name="message" rows="3" placeholder="ex. quero conversar sobre..." required=""></textarea>
                                         <div class="invalid-feedback">Digite sua mensagem.</div>
                                     </div>
                                     <div class="text-end mt-4">
@@ -530,6 +530,7 @@ class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-no
   </div>
 </footer>
 
+<input type="text" id="telefone" placeholder="Digite seu telefone" maxlength="15" />
 
 
 
@@ -551,13 +552,6 @@ class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-no
     <script src="./assets/js/core.min.js" type="text/javascript"></script>
     <script src="assets/js/plugins/aos.min.js"></script>
     <script src="assets/js/plugins/validar-form.js"></script>
-
-    <script>
-            AOS.init({
-                easing: 'ease-out',
-                duration: 1000,
-                offset: 100
-            });
-    </script>
+    <script src="assets/js/scripts.js"></script>
 </body>
 </html>
