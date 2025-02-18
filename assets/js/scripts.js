@@ -3,7 +3,7 @@ AOS.init({
     duration: 1000,
     offset: 100
 });
-
+document.getElementById('ano').textContent = new Date().getFullYear();
 document.getElementById('telefone').addEventListener('input', function(e) {
   let input = e.target.value;
   input = input.replace(/\D/g, '');

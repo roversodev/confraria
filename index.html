@@ -432,7 +432,7 @@ class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-no
                                         <div class="col-md-6">
                                           <div class="input-group input-group-outline mb-4">
                                               <label class="form-label" for="telefone">Telefone</label>
-                                              <input class="form-control" name="telefone" id="telefone" aria-label="Telefone..." type="text" required>
+                                              <input class="form-control" name="telefone" id="telefone" aria-label="Telefone..." type="text" inputmode="tel" required>
                                               <div class="invalid-feedback">Digite seu WhatsApp.</div>
                                           </div>
                                       </div>
@@ -440,7 +440,7 @@ class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-no
                                     <div>
                                         <div class="input-group input-group-outline mb-4">
                                             <label class="form-label" for="email">E-mail</label>
-                                            <input type="email" name="email" id="email" class="form-control" required>
+                                            <input type="email" name="email" id="email" class="form-control" inputmode="email" required>
                                             <div class="invalid-feedback">Digite um e-mail válido.</div>
                                         </div>
                                     </div>
@@ -509,9 +509,7 @@ class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-no
           <div class="row">
             <div class="copyright text-center text-sm text-desc-even text-lg-start col-lg-6">
               Copyright ©
-              <script>
-                document.write(new Date().getFullYear())
-              </script>
+              <span id="ano"></span>
               Confraria Nunes e Vieira feito com <i class="fa fa-heart"></i> by
               <a href="https://roversodev.github.io/site/" class="font-weight-bold text-desc-even" target="_blank">RoversoDev</a>
             </div>
@@ -530,7 +528,6 @@ class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-no
   </div>
 </footer>
 
-<input type="text" id="telefone" placeholder="Digite seu telefone" maxlength="15" />
 
 
 
